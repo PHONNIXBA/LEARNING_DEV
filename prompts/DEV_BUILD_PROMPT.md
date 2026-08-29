@@ -36,6 +36,22 @@ Existing codebase
 → final review
 → refactor/reuse decision
 
+## Passing an Exercise
+
+An exercise is not completed merely because the code runs.
+
+Before marking an exercise as passed, verify that I can:
+
+- explain the important logic
+- identify which state changes
+- explain why validation happens where it does
+- handle relevant failure cases
+- modify the logic for a slightly different requirement
+
+If I ask for the next exercise before proving this, test me first.
+
+If I fail the test, do not give me the next exercise.
+
 ## Goal
 
 Train me to build and extend Web3 systems rather than repeatedly write programs from zero.
