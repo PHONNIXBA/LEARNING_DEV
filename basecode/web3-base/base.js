@@ -7,7 +7,7 @@
 const Tool = require("readline/promises");
 const input = Tool.createInterface({
     input: process.stdin,
-    output: process.sdtout
+    output: process.stdout
 });
 
 
