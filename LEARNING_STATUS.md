@@ -1,182 +1,94 @@
 # LEARNING STATUS
 
-## Current Focus
+## 1. CURRENT DIRECTION
 
-JavaScript fundamentals for Web3 development.
+Primary learning outcome:
 
-Current goal:
-Build strong JavaScript logic before moving to real Web3 tools and Stellar SDK.
+> Become a product-thinking developer who can read, understand, trace, modify, and eventually design real software and Web3 projects.
+
+Current self-study strategy:
+
+TypeScript-first
++
+Repository-first
+
+Default learning flow:
+
+READ
+→ MAP
+→ COPY
+→ RUN
+→ TRACE
+→ EXPLAIN WHY
+→ MODIFY
+→ REBUILD CRITICAL PARTS
+→ TRANSFER
+
 
 ---
 
-## Can Use Independently
+## 2. CURRENT JAVASCRIPT FOUNDATION
 
-### JavaScript Basics
-- console.log()
-- let / const
-- Number / String / Boolean
+### Can Use
+
+- console.log
+- Node.js terminal input with readline/promises
+- async function
+- await in familiar input flows
+- if / else
+- loops
+- break / continue
+- Number conversion
+- String conversion
+- Boolean conversion
 - typeof
-- Number.isNaN()
-- Number.isInteger()
-- Number.isSafeInteger()
-- Number.isFinite()
-- parseInt()
-- parseFloat()
-
-### Conditions
-- if
-- else if
-- else
-- comparison conditions
-- logical operators
-
-### Loops
-- for
-- while
-- do...while
-- break
-- continue
+- Number.isNaN
+- Number.isInteger
+- Number.isSafeInteger
+- Number.isFinite
+- Math methods
+- parseInt
+- parseFloat
+- common String methods
+- arrays
+- array methods
 - for...of
-- forEach()
-
-### Strings
-- trim()
-- toUpperCase()
-- toLowerCase()
-- includes()
-- startsWith()
-- endsWith()
-- replace()
-- replaceAll()
-- slice()
-- charAt()
-- indexOf()
-- length
-
-### Arrays
-- push()
-- unshift()
-- pop()
-- shift()
-- slice()
-- splice()
-- includes()
-- indexOf()
-- map()
-- filter()
-- find()
-- one-dimensional arrays
-- two-dimensional arrays
+- forEach
+- map
+- filter
+- find
+- 2D arrays
+- objects
 - arrays of objects
+- function parameters
+- return
+- function composition
 
-### Objects
-- read object properties
-- update object properties
-- dynamic properties with object[key]
-- understand object references
-
-### Functions
-- create functions
-- parameters
-- return values
-- functions calling other functions
-- helper functions
-- coordinator functions
-
-### Input
-- readline/promises
-- input.question()
-- async function for keyboard input
-- await input.question()
-- input validation
 
 ---
 
-## Web3 Logic I Can Build
+## 3. JAVASCRIPT BEHAVIOR UNDERSTOOD
 
-- wallet connection simulation
-- wallet balance display
-- token transfer
-- transfer validation
-- network fee validation
-- balance state updates
-- token swap simulation
-- swap validation
-- swap preview / confirmation
-- pool state updates
-- transaction history
-- transaction ID generation
-- Web3 terminal menu
-- user action → validation → state update → history flow
+### Object References
 
----
+Understands that:
 
-## Concepts I Understand
+- find() returns the existing object from the original array
+- modifying that returned object mutates the object in the original array
+- filter() creates a new array but object elements still reference the same underlying objects
 
-- find() returns the first matching element or undefined
-- find() on an array of objects returns a reference to the original object
-- changing that object changes the object inside the original array
-- filter() returns a new array
-- object elements inside a filtered array still reference the original objects
-- = assigns a value
-- === compares values
-- validation should happen before state mutation
-- failed transactions should not change state
-- coordinator functions should reuse smaller functions
-- read actions should not accidentally mutate state
-- input amount must be different from swap output amount
-- transactionHistory.length + 1 can be used as a simple transaction ID when transactions are never deleted
 
----
+### Array Return Behavior
 
-## Still Practicing
+Understands:
 
-- designing larger systems with many functions
-- deciding which logic should become a reusable helper
-- designing clean coordinator functions
-- separating reusable code from project-specific code
-- structuring larger Web3 applications
-- async/await across multiple functions
+- find() with no match → undefined
+- filter() with no match → []
 
----
 
-## Not Learned Yet
+### Dynamic Object Keys
 
-- JSON
-- destructuring
-- spread syntax
-- JavaScript modules
-- Promise
-- new Promise()
-- try/catch
-- fetch()
-- API integration
-- BigInt
-- Stellar SDK
-- Soroban
-- smart contracts
-- frontend dApp development
+Can access values such as:
 
----
-
-## Current Personal Codebase
-
-Status:
-Not created yet.
-
-Planned version:
-Web3 Base v1
-
-Purpose:
-Store reusable JavaScript logic that I fully understand and can reuse across Web3 exercises and projects.
-
----
-
-## Current Development Level
-
-Stage:
-JavaScript logic fundamentals → early Web3 application logic
-
-I can build small Web3 simulations using JavaScript, arrays, objects, functions, validation, state updates, transaction history, and keyboard input.
-
-I am not yet using a real blockchain, wallet SDK, API, or smart contract.
+```js
+wallet.balances[asset]
