@@ -20,11 +20,15 @@ AVAILABLE TIME
 ↓
 OBSERVED LEARNING SPEED
 ↓
-MONTHLY LEARNING PLAN
+DRAFT MONTHLY LEARNING PLAN
 ↓
-DEVREL REVIEW
+SEND PLAN TO DEVREL
 ↓
-WEEKLY EXECUTION
+EVALUATE DEVREL FEEDBACK
+↓
+FINALIZE MONTHLY PLAN
+↓
+DEV LEARNING EXECUTION
 ↓
 PROGRESS EVIDENCE
 ↓
@@ -40,7 +44,10 @@ At the beginning of each learning month:
 6. Create a realistic monthly learning plan.
 7. Break it into weekly capability outcomes.
 8. Define evidence required for each outcome.
-9. Produce a concise version that can be sent to DevRel.
+9. Produce a concise version to send to DevRel.
+10. Evaluate DevRel feedback against the current outcome, capability, time, and roadmap.
+11. Finalize the monthly plan.
+12. Only then treat the plan as the active plan for DEV LEARNING.
 
 A plan is a hypothesis.
 
@@ -475,11 +482,15 @@ English learning should reinforce previous developer learning.
 
 Preferred relationship:
 
-DEV LESSON
-Day N
+DEV LEARNING
 ↓
 DEV ENGLISH
-Day N+1
+
+Use the most recent meaningful DEV LEARNING topic
+when a suitable English-practice time window becomes available.
+
+Day N → Day N+1 is preferred when practical,
+but it is not a fixed scheduling requirement.
 
 
 The planning chat should include:
