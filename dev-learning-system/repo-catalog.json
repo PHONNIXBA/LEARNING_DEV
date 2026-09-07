@@ -1,0 +1,93 @@
+{
+  "catalog_version": 1,
+  "difficulty_scale": {
+    "0": "Guided beginner repository or learning environment",
+    "1": "Small Web3 dApp with simple end-to-end flow",
+    "2": "Real dApp with abstractions and multiple flows",
+    "3": "DeFi or multi-contract architecture",
+    "4": "Mature production repository or monorepo"
+  },
+  "repos": [
+    {
+      "id": "speedrun-ethereum-challenges",
+      "name": "SpeedRunEthereum - Scaffold-ETH 2 Challenges",
+      "github_owner": "scaffold-eth",
+      "github_repo": "se-2-challenges",
+      "repo_url": "https://github.com/scaffold-eth/se-2-challenges",
+      "default_branch": "main",
+
+      "learning_role": "learning_source",
+      "difficulty": 0,
+
+      "verified": true,
+      "active": true,
+
+      "good_for": [
+        "ethereum fundamentals",
+        "smart contract interaction",
+        "guided Web3 exercises",
+        "progressive challenge discovery"
+      ],
+
+      "not_good_for": [
+        "first standalone production repo analysis"
+      ],
+
+      "available_learning_units": [
+        {
+          "id": "tokenization",
+          "branch": "challenge-tokenization",
+          "internal_difficulty": 0
+        },
+        {
+          "id": "crowdfunding",
+          "branch": "challenge-crowdfunding",
+          "internal_difficulty": 1
+        },
+        {
+          "id": "token-vendor",
+          "branch": "challenge-token-vendor",
+          "internal_difficulty": 1
+        },
+        {
+          "id": "dex",
+          "branch": "challenge-dex",
+          "internal_difficulty": 2
+        },
+        {
+          "id": "over-collateralized-lending",
+          "branch": "challenge-over-collateralized-lending",
+          "internal_difficulty": 3
+        }
+      ]
+    },
+
+    {
+      "id": "scaffold-eth-2",
+      "name": "Scaffold-ETH 2",
+      "github_owner": "scaffold-eth",
+      "github_repo": "scaffold-eth-2",
+      "repo_url": "https://github.com/scaffold-eth/scaffold-eth-2",
+      "default_branch": "main",
+
+      "learning_role": "starter_framework",
+      "difficulty": 1,
+
+      "verified": true,
+      "active": true,
+
+      "good_for": [
+        "Web3 project structure",
+        "frontend and smart contract integration",
+        "wallet interaction",
+        "Ethereum dApp architecture"
+      ],
+
+      "not_good_for": [
+        "absolute first exposure without guidance"
+      ],
+
+      "available_learning_units": []
+    }
+  ]
+}
