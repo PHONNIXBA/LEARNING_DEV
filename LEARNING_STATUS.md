@@ -83,13 +83,23 @@ Independently inspect and map a small unfamiliar TypeScript repository with less
 ## CURRENT PLAN
 
 Monthly Outcome:
-...
+Independently inspect and map a small unfamiliar JavaScript/TypeScript repository, identify its important files and likely entry point, trace one meaningful execution flow with limited guidance, explain important data / branch / state behavior, and complete one small modification after reasoning about which files should change.
 
 Current Week:
-...
+Week 1 — Repository Reading Independence.
+Use a small unfamiliar multi-file JavaScript/TypeScript repository to practice independent repository navigation, mapping, entry-point identification, and initial flow tracing with less step-by-step guidance than unjs/destr.
 
 Current Daily Objective:
-...
+Independently inspect a small unfamiliar multi-file JavaScript/TypeScript repository and create an initial repo map before receiving explanation. Identify the project purpose, important folders/files, likely entry point, and explain why each selected file matters.
+
+Daily Evidence:
+- Initial repo map created independently.
+- Important files selected with reasoning.
+- Likely entry point identified.
+- Clear explanation of which files are relevant and which can be ignored.
+
+Daily Stop Condition:
+Stop when the initial repo map and file-selection reasoning are complete, even if the full execution flow has not yet been traced.
 
 
 ---
