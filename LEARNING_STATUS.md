@@ -6,6 +6,25 @@
 
 Become a product-thinking developer capable of understanding, tracing, modifying, debugging, building, and eventually designing real software and Web3 systems.
 
+### Concrete Build Outcome
+
+Independently build a functional Web2 CRM application.
+
+The CRM should progressively require capabilities such as:
+
+- frontend UI
+- backend/API
+- database
+- authentication
+- customer/contact management
+- CRUD operations
+- pipeline/status management
+- search/filter
+- basic permissions
+- debugging and feature modification
+
+This is a concrete build outcome under the broader long-term goal of becoming a product-thinking developer.
+
 ### Before Devcon 8
 
 Develop enough practical developer literacy to:
@@ -75,7 +94,7 @@ Only add capabilities demonstrated through actual evidence.
 
 ## NEXT GAP
 
-Independently inspect and map a small unfamiliar TypeScript repository with less step-by-step guidance.
+Independently inspect and map a small unfamiliar Web2 application repository with less step-by-step guidance, identifying product purpose, important files, application boundaries, and one simple user/data flow.
 
 
 ---
@@ -83,27 +102,61 @@ Independently inspect and map a small unfamiliar TypeScript repository with less
 ## CURRENT PLAN
 
 Monthly Outcome:
-Independently inspect and map a small unfamiliar JavaScript/TypeScript repository, identify its important files and likely entry point, trace one meaningful execution flow with limited guidance, explain important data / branch / state behavior, and complete one small modification after reasoning about which files should change.
+Independently inspect and understand small real Web2 application repositories that progressively resemble parts of a CRM.
+By the end of the month, I should be able to:
+- inspect an unfamiliar small application repository
+- identify frontend/backend boundaries when present
+- identify important files and entry points
+- identify where data/state is stored
+- trace one meaningful CRUD or user flow
+- understand how data moves between UI, logic, API, and storage
+- complete one small modification
+- explain which files should and should not change
+Repository choices should increasingly expose patterns transferable to building a CRM.
 
 Current Week:
-Week 1 — Repository Reading Independence.
-Use a small unfamiliar multi-file JavaScript/TypeScript repository to practice independent repository navigation, mapping, entry-point identification, and initial flow tracing with less step-by-step guidance than unjs/destr.
+Week 1 — Repository Reading Independence in a Small Web2 Application.
+Use a small unfamiliar JavaScript/TypeScript application repository, preferably containing a simple real product flow such as CRUD, forms, API calls, or stored data.
+Practice:
+- independent repository navigation
+- identifying product purpose
+- identifying important files
+- identifying likely entry points
+- identifying frontend/backend/data boundaries if present
+- mapping one simple user flow
+The repository should be small enough for my current capability and should contain patterns that transfer toward building a CRM.
+Do NOT use another utility-library repository unless it provides a necessary prerequisite.
 
 Current Daily Objective:
-Independently inspect a small unfamiliar multi-file JavaScript/TypeScript repository and create an initial repo map before receiving explanation. Identify the project purpose, important folders/files, likely entry point, and explain why each selected file matters.
+Independently inspect a small unfamiliar Web2 application repository and create an initial repo map before receiving explanation.
+Identify:
+- what product/problem the application solves
+- the main user action
+- important folders/files
+- likely application entry point
+- where UI lives
+- where business/application logic likely lives
+- where data is stored or accessed, if present
+- which files are relevant to the selected user flow
+- which files can be ignored initially
 
 Daily Evidence:
 - Initial repo map created independently.
+- Product purpose identified.
 - Important files selected with reasoning.
 - Likely entry point identified.
-- Clear explanation of which files are relevant and which can be ignored.
+- Basic application boundaries identified.
+- Relevant vs ignored files explained.
 
 Daily Stop Condition:
-Stop when the initial repo map and file-selection reasoning are complete, even if the full execution flow has not yet been traced.
+Stop when the initial application repo map and file-selection reasoning are complete.
+Do not deeply trace the full flow unless the map is already sufficiently clear.
 
 
 ---
 
+
+
 ## LAST UPDATED
 
-2026-09-09
+2026-09-12
