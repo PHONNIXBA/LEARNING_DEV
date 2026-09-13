@@ -94,63 +94,107 @@ Only add capabilities demonstrated through actual evidence.
 
 ## NEXT GAP
 
-Independently inspect and map a small unfamiliar Web2 application repository with less step-by-step guidance, identifying product purpose, important files, application boundaries, and one simple user/data flow.
+Build the minimum frontend foundation required to understand and build a small real Web2 application.
 
+Focus on:
+- React component mental model
+- JSX
+- props
+- state
+- event handling
+- forms
+- list rendering
+- basic component responsibility
+
+Then transfer these concepts into a small Next.js Blog frontend.
 
 ---
 
 ## CURRENT PLAN
 
 Monthly Outcome:
-Independently inspect and understand small real Web2 application repositories that progressively resemble parts of a CRM.
-By the end of the month, I should be able to:
-- inspect an unfamiliar small application repository
-- identify frontend/backend boundaries when present
-- identify important files and entry points
-- identify where data/state is stored
-- trace one meaningful CRUD or user flow
-- understand how data moves between UI, logic, API, and storage
-- complete one small modification
-- explain which files should and should not change
-Repository choices should increasingly expose patterns transferable to building a CRM.
+Develop enough practical frontend and application-level understanding to build and explain a small Web2 application frontend, then use that foundation to continue toward full-stack CRM development.
+
+By the end of the month, I should progressively be able to:
+- build small React components independently
+- reason about props and state
+- handle user events and forms
+- understand basic application data flow
+- build a small frontend with Next.js
+- understand basic routing and page structure
+- identify component responsibility
+- trace one user action through the frontend
+- make a small modification without step-by-step guidance
+- use this foundation for later frontend/backend/API/database learning
 
 Current Week:
-Week 1 — Repository Reading Independence in a Small Web2 Application.
-Use a small unfamiliar JavaScript/TypeScript application repository, preferably containing a simple real product flow such as CRUD, forms, API calls, or stored data.
-Practice:
-- independent repository navigation
-- identifying product purpose
-- identifying important files
-- identifying likely entry points
-- identifying frontend/backend/data boundaries if present
-- mapping one simple user flow
-The repository should be small enough for my current capability and should contain patterns that transfer toward building a CRM.
-Do NOT use another utility-library repository unless it provides a necessary prerequisite.
+Week 1 — React Foundation → Next.js Blog Frontend.
+
+Outcome:
+Build a small functional Blog frontend with Next.js after first learning the minimum React fundamentals required to understand what the code is doing.
+
+Required React foundation:
+- JSX
+- components
+- props
+- useState
+- event handling
+- forms
+- conditional rendering
+- list rendering with map()
+- parent/child component data flow
+
+Next.js target:
+- App Router
+- page and layout
+- navigation with Link
+- dynamic post routes
+- basic Server vs Client Component mental model
+- reusable components
+
+Blog frontend scope:
+- Blog home / post list
+- Post card
+- Post detail
+- Create post form
+- Edit post form
+- local or mock data
+- basic responsive UI
+
+Do NOT add backend, database, authentication, NestJS, Prisma, or production API this week.
 
 Current Daily Objective:
-Independently inspect a small unfamiliar Web2 application repository and create an initial repo map before receiving explanation.
-Identify:
-- what product/problem the application solves
-- the main user action
-- important folders/files
-- likely application entry point
-- where UI lives
-- where business/application logic likely lives
-- where data is stored or accessed, if present
-- which files are relevant to the selected user flow
-- which files can be ignored initially
+Learn and demonstrate the first React fundamentals:
+- JSX
+- component
+- props
+
+Then build a small static Blog structure using React components.
+
+Practice target:
+BlogPage
+→ Header
+→ PostList
+→ PostCard
+
+PostCard should receive blog data such as:
+- title
+- author
+- description
+
+through props.
 
 Daily Evidence:
-- Initial repo map created independently.
-- Product purpose identified.
-- Important files selected with reasoning.
-- Likely entry point identified.
-- Basic application boundaries identified.
-- Relevant vs ignored files explained.
+- Explain what a React component is in my own words.
+- Explain what props are and why they are used.
+- Create multiple React components.
+- Pass post data from parent to child using props.
+- Explain the component relationship without copying the explanation.
 
 Daily Stop Condition:
-Stop when the initial application repo map and file-selection reasoning are complete.
-Do not deeply trace the full flow unless the map is already sufficiently clear.
+Stop when I can independently create a small static Blog component structure and pass data through props correctly.
+
+Do not continue to state, forms, or Next.js until this evidence is demonstrated.
 
 
 ---
