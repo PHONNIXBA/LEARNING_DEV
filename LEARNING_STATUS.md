@@ -108,6 +108,7 @@ Focus on:
 
 Then transfer these concepts into a small Next.js Blog frontend.
 
+
 ---
 
 ## CURRENT PLAN
@@ -164,37 +165,48 @@ Blog frontend scope:
 Do NOT add backend, database, authentication, NestJS, Prisma, or production API this week.
 
 Current Daily Objective:
-Learn and demonstrate the first React fundamentals:
-- JSX
-- component
-- props
+Learn and demonstrate the next React fundamentals:
 
-Then build a small static Blog structure using React components.
+- useState
+- event handling
+- basic state-driven UI updates
+
+Extend the existing Blog React practice instead of starting a new project.
 
 Practice target:
-BlogPage
-→ Header
-→ PostList
-→ PostCard
+Use the existing BlogPage / PostList / PostCard structure.
 
-PostCard should receive blog data such as:
-- title
-- author
-- description
+Add at least one interactive behavior, for example:
+- like counter
+- show/hide post description
+- published/unpublished toggle
 
-through props.
+The interaction should demonstrate:
+
+User action
+→ event handler
+→ state update
+→ component re-render
+→ updated UI
 
 Daily Evidence:
-- Explain what a React component is in my own words.
-- Explain what props are and why they are used.
-- Create multiple React components.
-- Pass post data from parent to child using props.
-- Explain the component relationship without copying the explanation.
+- Explain the difference between props and state in my own words.
+- Create state using useState.
+- Handle a user event such as onClick.
+- Update state from the event.
+- Explain why the UI changes after state changes.
+- Identify which component should own the state and why.
+- Continue using the existing component/props structure without unnecessary restructuring.
 
 Daily Stop Condition:
-Stop when I can independently create a small static Blog component structure and pass data through props correctly.
+Stop when I can independently add one stateful interaction to the existing Blog practice and explain:
 
-Do not continue to state, forms, or Next.js until this evidence is demonstrated.
+event
+→ state update
+→ re-render
+→ UI change
+
+Do not continue to forms or Next.js until this evidence is demonstrated.
 
 
 ---
