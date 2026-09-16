@@ -89,16 +89,17 @@ Only add capabilities demonstrated through actual evidence.
   - Significant decomposition and prerequisite teaching were still required.
   - Several corrections were needed for branch tracing and technical wording.
 
-### React Practice — Day 1–2
+### React Practice — Day 3
 
-- Built a small Blog component structure using JSX, components, and props.
-- Passed post data from PostList to PostCard through typed props.
-- Explained basic parent/child component relationships.
-- Used useState and event handlers to create state-driven UI behavior.
-- Implemented conditional UI, toggle behavior, and multi-state interaction.
-- Debugged simple import/save issues independently.
-- Still needs more practice reasoning about multiple state updates and the exact event → state update → re-render sequence.
-
+- Built controlled form inputs using value + onChange.
+- Handled form submission with onSubmit and preventDefault.
+- Passed submitted data from child to parent through a callback prop.
+- Placed shared posts state in a common parent.
+- Added new objects to array state without mutating the existing array.
+- Rendered posts with map() into PostCard components.
+- Reset form state after submission.
+- Traced the flow from user input to updated UI.
+- Still needs practice distinguishing data creation, state update, and render, especially across multiple components.
 
 ---
 
@@ -175,60 +176,62 @@ Blog frontend scope:
 Do NOT add backend, database, authentication, NestJS, Prisma, or production API this week.
 
 Current Daily Objective:
-Learn and demonstrate the next React fundamentals:
+Begin Next.js by understanding and demonstrating the basic App Router structure.
 
-- controlled form inputs
-- form submission
-- list rendering with map()
-- adding new data into state
+Learn only:
 
-Continue using the existing Blog React practice.
+- app directory
+- page.tsx
+- layout.tsx
+- Link
+- basic navigation
+- basic Server vs Client Component mental model
+
+Create a new Next.js Blog frontend and migrate the existing static Blog structure into it.
 
 Practice target:
-Extend the current Blog project with a CreatePostForm.
 
-The form should allow the user to enter:
-- title
-- author
-- description
+app/
+├─ layout.tsx
+├─ page.tsx
+├─ posts/
+│  └─ page.tsx
+└─ components/
+   ├─ Header.tsx
+   ├─ PostList.tsx
+   └─ PostCard.tsx
 
-Then submit a new post and display it in the existing PostList.
+The application should support:
 
-Target flow:
+Home
+→ navigate to Posts
+→ render the existing blog post list
 
-User types into form
-→ onChange event
-→ input state updates
-→ form UI reflects state
-
-User submits form
-→ onSubmit event
-→ new post is created
-→ posts state updates
-→ PostList re-renders
-→ new PostCard appears
+Reuse the React concepts already learned:
+- components
+- props
+- list rendering
+- component responsibility
 
 Daily Evidence:
-- Explain what a controlled input is in my own words.
-- Use state to control form input values.
-- Handle onChange correctly.
-- Handle form submission with onSubmit.
-- Render posts using map().
-- Add a new post into state without mutating the existing array.
-- Explain the full flow from typing to the new PostCard appearing.
-- Explain which component should own the posts state and why.
+- Explain what app/, page.tsx, and layout.tsx are responsible for.
+- Explain how Next.js App Router maps folders/files to routes at a basic level.
+- Create at least two working routes.
+- Navigate between routes using Link.
+- Reuse PostList and PostCard components.
+- Explain which parts are normal React and which parts are provided by Next.js.
+- Explain at a basic level why some components may need "use client".
 
 Daily Stop Condition:
-Stop when I can independently create and submit a post through the form and correctly explain:
+Stop when I can independently:
 
-input event
-→ form state update
-→ submit event
-→ posts state update
-→ re-render
-→ new post displayed
+- create a basic Next.js App Router structure
+- create Home and Posts routes
+- navigate between them
+- render the existing Blog components inside Next.js
+- explain page.tsx, layout.tsx, Link, and the basic Server vs Client Component distinction
 
-Do not continue to Next.js until this evidence is demonstrated.
+Do not continue to dynamic routes, Create/Edit pages, backend, database, authentication, or API yet.
 
 
 ---
