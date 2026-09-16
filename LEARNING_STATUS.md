@@ -89,6 +89,16 @@ Only add capabilities demonstrated through actual evidence.
   - Significant decomposition and prerequisite teaching were still required.
   - Several corrections were needed for branch tracing and technical wording.
 
+### React Practice — Day 1–2
+
+- Built a small Blog component structure using JSX, components, and props.
+- Passed post data from PostList to PostCard through typed props.
+- Explained basic parent/child component relationships.
+- Used useState and event handlers to create state-driven UI behavior.
+- Implemented conditional UI, toggle behavior, and multi-state interaction.
+- Debugged simple import/save issues independently.
+- Still needs more practice reasoning about multiple state updates and the exact event → state update → re-render sequence.
+
 
 ---
 
@@ -167,46 +177,58 @@ Do NOT add backend, database, authentication, NestJS, Prisma, or production API 
 Current Daily Objective:
 Learn and demonstrate the next React fundamentals:
 
-- useState
-- event handling
-- basic state-driven UI updates
+- controlled form inputs
+- form submission
+- list rendering with map()
+- adding new data into state
 
-Extend the existing Blog React practice instead of starting a new project.
+Continue using the existing Blog React practice.
 
 Practice target:
-Use the existing BlogPage / PostList / PostCard structure.
+Extend the current Blog project with a CreatePostForm.
 
-Add at least one interactive behavior, for example:
-- like counter
-- show/hide post description
-- published/unpublished toggle
+The form should allow the user to enter:
+- title
+- author
+- description
 
-The interaction should demonstrate:
+Then submit a new post and display it in the existing PostList.
 
-User action
-→ event handler
-→ state update
-→ component re-render
-→ updated UI
+Target flow:
+
+User types into form
+→ onChange event
+→ input state updates
+→ form UI reflects state
+
+User submits form
+→ onSubmit event
+→ new post is created
+→ posts state updates
+→ PostList re-renders
+→ new PostCard appears
 
 Daily Evidence:
-- Explain the difference between props and state in my own words.
-- Create state using useState.
-- Handle a user event such as onClick.
-- Update state from the event.
-- Explain why the UI changes after state changes.
-- Identify which component should own the state and why.
-- Continue using the existing component/props structure without unnecessary restructuring.
+- Explain what a controlled input is in my own words.
+- Use state to control form input values.
+- Handle onChange correctly.
+- Handle form submission with onSubmit.
+- Render posts using map().
+- Add a new post into state without mutating the existing array.
+- Explain the full flow from typing to the new PostCard appearing.
+- Explain which component should own the posts state and why.
 
 Daily Stop Condition:
-Stop when I can independently add one stateful interaction to the existing Blog practice and explain:
+Stop when I can independently create and submit a post through the form and correctly explain:
 
-event
-→ state update
+input event
+→ form state update
+→ submit event
+→ posts state update
 → re-render
-→ UI change
+→ new post displayed
 
-Do not continue to forms or Next.js until this evidence is demonstrated.
+Do not continue to Next.js until this evidence is demonstrated.
 
 
 ---
